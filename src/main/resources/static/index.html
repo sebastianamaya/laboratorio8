@@ -26,11 +26,22 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <script src="/app.js"></script>
 
     </head>
-
+    
 
     
     <body>
         <div>TODO write content</div>
-        <button onclick="sendPoint()">send point</button>
+        <canvas id="myCanvas" width="800" height="600"></canvas>
+        <div id="posx">
+        Valor X:    
+        <input type="number" id="x">
+        </div>
+        <div id="posy">
+        Valor Y:    
+        <input type="number" id="y">
+        </div>
+        <button onclick="manual_point()">send point</button>
+        <button onclick="connect()">Conectar</button>
+        <button onclick="disconnect()">Desconectar</button>
     </body>
 </html>
